@@ -1,0 +1,35 @@
+.inputCont {
+    position: relative;
+}
+.inputField {
+    border: none;
+    outline: none !important;
+    font-size: 1rem;
+    width: 15rem;
+    height: 2.5em;
+    background-color: #fff;
+    border-radius: 2rem;
+    border: 0.25rem solid #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0.5rem 0 ;
+    padding: 0 0 0 1rem;
+}
+.errorMessage {
+    position: absolute;
+    left: 1rem;
+    top: -0.25rem;
+    color: #C91F37;
+    font-size: 0.25rem;
+    width: max-content;
+}
+.errorInput {
+    color: #C91F37;
+    border-color: #C91F37;
+}
+.errorInput::placeholder {
+    color: #C91F37;
+    opacity: 0.5;
+}

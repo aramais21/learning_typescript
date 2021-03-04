@@ -1,1 +1,12 @@
-
+*{
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
