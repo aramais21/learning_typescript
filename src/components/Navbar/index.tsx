@@ -15,8 +15,6 @@ const Navbar = (props: Props) => {
             {props.isLoggedIn?
                 <>
                     <Link to = '/' className = 'link' > home </Link>
-                    <Link to = '/create' className = 'link' > create </Link>
-                    <Link to = '/show' className = 'link' > show </Link>
                     <div className = 'link' onClick = {props.changeStatus} > sign out </div>
                 </>
             :

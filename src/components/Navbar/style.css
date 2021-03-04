@@ -32,6 +32,7 @@
     justify-content: center;
     transition: 0.2s linear all;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .link:hover {

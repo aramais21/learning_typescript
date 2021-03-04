@@ -2,6 +2,7 @@ import {useState, MouseEvent} from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import SignUp from './pages/SignUp';
 
 function App() {
@@ -18,15 +19,9 @@ function App() {
       {isLoggedIn?
         <Switch>
             <Route exact path = '/' >
-                <></>
+                <Home />
             </Route>
-            <Route exact path = '/create'>
-                <></>
-            </Route>
-            <Route exact path = '/show' >
-                <></>
-            </Route>
-            <Redirect to ='/' />
+            <Redirect to = '/' />
         </Switch>
         :
         <Switch>
