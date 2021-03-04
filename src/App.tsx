@@ -2,7 +2,6 @@ import {useState, MouseEvent} from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 
 function App() {
@@ -32,9 +31,6 @@ function App() {
         :
         <Switch>
             <Route exact path = '/' >
-              <SignIn changeStatus = {changeStatus} ></SignIn>
-            </Route>
-            <Route exact path = '/signup' >
               <SignUp changeStatus = {changeStatus} ></SignUp>
             </Route>
             <Redirect to = '/' />
